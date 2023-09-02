@@ -42,7 +42,7 @@
           default = raxml;
         };
         apps = rec {
-          hello = flake-utils.lib.mkApp { drv = self.packages.${system}.raxml; };
+          raxml = flake-utils.lib.mkApp { drv = self.packages.${system}.raxml; };
           default = raxml;
         };
       }
